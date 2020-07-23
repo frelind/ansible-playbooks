@@ -1,0 +1,9 @@
+- hosts: localhost
+  connection: local
+  gather_facts: no
+
+  tasks:
+    - name: copy bash_aliases
+      copy:
+        src: bash_aliases
+        dest: ~/.bash_aliases
