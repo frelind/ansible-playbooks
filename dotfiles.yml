@@ -7,3 +7,8 @@
       copy:
         src: bash_aliases
         dest: ~/.bash_aliases
+
+    - name: copy gitconfig
+      copy:
+        src: gitconfig
+        dest: ~/.gitconfig
