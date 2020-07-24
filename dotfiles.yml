@@ -3,17 +3,7 @@
   gather_facts: no
 
   tasks:
-    - name: copy bash_aliases
+    - name: copy files
       copy:
-        src: bash_aliases
-        dest: ~/.bash_aliases
-
-    - name: copy gitconfig
-      copy:
-        src: gitconfig
-        dest: ~/.gitconfig
-
-    - name: copy vimrc
-      copy:
-        src: vimrc
-        dest: ~/.vimrc
+        src: dotfiles/
+        dest: "~"
